@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm của mỹ phẩm</title>
+</head>
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            color: #111;
+            line-height: 1.15;
+
+        }
+        #wrapear{
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+        .headline{
+            text-align: center;
+            margin: 40px 0px;
+        }
+        h3{
+            font-size: 18px;
+            color: #111;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border: 1px solid #bebebe;
+            display: inline-block; 
+            color: #555;
+            font-weight: 600;
+        }
+        ul.products{
+            list-style: none ;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-bottom: 30px;
+        }
+        ul.products li{
+            flex-basis: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+        }
+       ul.products li img{
+            max-width: 100%;
+            height: 250px;
+       }
+       ul.products li .product-top{
+        position: relative;
+        overflow: hidden;
+       }
+       ul.products li .product-top a.product-thumb{
+            display: block;
+       }
+       ul.products li .product-top a.product-thumb img{
+            display: block;
+       }
+       ul.products li:hover .product-top a.product-thumb img{
+            filter: opacity(70%);
+       }
+       ul.products li .product-top a.Buy-now{
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color: #446084;
+            color: #fff;
+            padding: 10px 0px;
+            position: absolute;
+            width: 100%;
+            bottom: -37px;
+            transition: 0.25s ease-in-out;
+            opacity: 0.85;
+       }
+       ul.products li:hover a.Buy-now{
+        bottom: 0px;
+       }
+       ul.products li .product-info{
+            padding: 20px 0px;
+       }
+       ul.products li .product-info a{
+            display: block;
+            text-decoration: none;
+       }
+       ul.products li .product-info a.product-cat{
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #9e9e9e;
+            padding: 3px 0px;
+       }
+       ul.products li .product-info a.product-name{
+            color: #334862;
+            padding: 3px 0px;
+       }
+       ul.products li .product-info .product-price{
+        color: #111;
+        padding: 2px 0px;
+        font-weight: 600;
+       }
+    </style>
+
+    <div id="wrapear">
+        <div class="headline">
+            <h3>Sản phẩm Mỹ phẩm</h3>
+        </div>
+        <ul class="products">
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="https://topbrands.vn/top-thuong-hieu-my-pham-cua-duc-noi-tieng-nhat" class="product-thumb">
+                            <img src="/show-products/images/My-pham-duc-1.jpg" alt="">
+                        </a>
+                        <a href="" class="Buy-now">Mua ngay</a>
+                        <!-- Mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="https://topbrands.vn/top-thuong-hieu-my-pham-cua-duc-noi-tieng-nhat" class="product-cat">Chăm sóc da</a>
+                        <a href="https://topbrands.vn/top-thuong-hieu-my-pham-cua-duc-noi-tieng-nhat" class="product-name">Balea</a>
+                        <div class="product-price">$1000</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="https://topbrands.vn/top-thuong-hieu-my-pham-cua-duc-noi-tieng-nhat" class="product-thumb">
+                            <img src="/show-products/images/My-pham-duc-2.jpg" alt="">
+                        </a>
+                        <a href="" class="Buy-now">Mua ngay</a>
+                        <!-- Mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="https://topbrands.vn/top-thuong-hieu-my-pham-cua-duc-noi-tieng-nhat" class="product-cat">Dưỡng tóc, dưỡng da, dưỡng thể</a>
+                        <a href="https://topbrands.vn/top-thuong-hieu-my-pham-cua-duc-noi-tieng-nhat" class="product-name">Lavera</a>
+                        <div class="product-price">&1500</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="/show-products/images/My-pham-duc-3.jpg" alt="">
+                        </a>
+                        <a href="" class="Buy-now">Mua ngay</a>
+                        <!-- Mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Kem dưỡng, chống nắng, trang điểm</a>
+                        <a href="" class="product-name">Nivea</a>
+                        <div class="product-price">$200</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="/show-products/images/My-pham-duc-4.jpg" alt="">
+                        </a>
+                        <a href="" class="Buy-now">Mua ngay</a>
+                        <!-- Mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Trang điểm</a>
+                        <a href="" class="product-name">ArtDeco</a>
+                        <div class="product-price">$1200</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="/show-products/images/My-pham-duc-5.jpg" alt="">
+                        </a>
+                        <a href="" class="Buy-now">Mua ngay</a>
+                        <!-- Mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Phòng ngừa lão hóa da</a>
+                        <a href="" class="product-name">Sans Soucis</a>
+                        <div class="product-price">$1400</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="/show-products/images/My-pham-My-1.jpg" alt="">
+                        </a>
+                        <a href="" class="Buy-now">Mua ngay</a>
+                        <!-- Mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Làm đẹp</a>
+                        <a href="" class="product-name">Clinique</a>
+                        <div class="product-price">$2000</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                             <img src="/show-products/images/My-pham-My-2.jpg" alt="">
+                        </a>
+                        <a href="" class="Buy-now">Mua ngay</a>
+                         <!-- Mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Kem dưỡng da</a>
+                        <a href="" class="product-name">Dreamsthetics</a>
+                        <div class="product-price">$800</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="/show-products/images/My-pham-My-3.jpg" alt="">
+                        </a>
+                        <a href="" class="Buy-now">Mua ngay</a>
+                        <!-- Mua ngay -->
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Trang điểm</a>
+                        <a href="" class="product-name">Mac</a>
+                        <div class="product-price">$1400</div>
+                    </div>
+                </div>
+            </li>
+         </ul>
+    </div>
+</body>
+</html>
